@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Clase 2</title>
+    <!-- <style>
+        body{
+            background-color: aquamarine;
+        }
+    </style> -->
+</head>
+
+<body>
+    <a href="google.com">google</a>
+    <fieldset>
+        <legend>Formulario de lenguajes</legend>
+        <p>Cual es su lenguaje favorito</p>
+        <div>
+            <input type="radio" value="javascript" name="lenguajes" id="javascript" checked>
+            <label for="javascript">Javascript</label>
+
+
+            <input type="radio" value="c++" name="lenguajes" id="c++">
+            <label for="c++">C++</label>
+
+            <input type="radio" value="python" name="lenguajes" id="python">
+            <label for="python">Python</label>
+
+        </div>
+    </fieldset>
+    <div>
+        <label for="languages">Lenguaje favorito</label>
+        <input list="languages" name="languages">
+        <datalist id="languages">
+            <option value="javascript">javascript
+            <option>
+            <option value="c++"></option>
+            <option value="c"></option>
+        </datalist>
+    </div>
+
+    <div class="faqs">
+        <h2>preguntas frecuentes</h2>
+        <details>
+            <summary>que estas estudiando</summary>
+            <p>Estoy estudiando ingenieria</p>
+        </details>
+        <details>que ils>
+            <summary>que estas estudiando</summary>
+            <p>Estoy estudiando ingenieria</p>
+        </details>
+    </div>
+
+    <div>
+        <dialog id="modal">
+            <h1>este es un modal</h1>
+            <p>aqui el contenido del modal</p>
+            <button id="btnClose">cerrar</button>
+        </dialog>
+        <button id="abrir">abrir</button>
+    </div>
+    <script>
+        const abrir = document.querySelector("#abrir")
+        const modal = document.querySelector("#modal")
+        const cerrar = document.querySelector("#btnClose")
+        abrir.addEventListener('click', () => {
+            modal.showModal()
+        })
+        cerrar.addEventListener('click', () => {
+            modal.close()
+        })
+
+        // window.abrir.addEventListener('click', () => {
+        //     modal.showModal()
+        // })
+        // window.btnClose.addEventListener('click', () => {
+        //     modal.close()
+        // })
+    </script>
+
+</body>
+
+</html>
